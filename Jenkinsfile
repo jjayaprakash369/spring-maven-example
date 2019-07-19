@@ -25,5 +25,10 @@ pipeline {
         }
       }
     }
+    stage('Maven') {
+      steps {
+        tool(name: 'maven', type: 'build')
+      }
+    }
   }
 }
